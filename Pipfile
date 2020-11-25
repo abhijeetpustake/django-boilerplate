@@ -1,0 +1,23 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+flake8 = "*"
+
+[packages]
+django = "*"
+python-decouple = "*"
+psycopg2-binary = "==2.8.4"
+djangorestframework = "*"
+redis = "*"
+django-rq = "*"
+django-oauth-toolkit = "*"
+django-cors-headers = "*"
+drf-yasg = "*"
+watchtower = "*"
+boto3 = "*"
+coverage = "*"
+[requires]
+python_version = "3.7"
