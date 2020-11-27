@@ -63,11 +63,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'your_project.wsgi.application'
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static_files')]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
 
 
 # Database
@@ -133,7 +128,7 @@ STATIC_URL = '/static/'
 
 REST_FRAMEWORK = {
     'DEFAULT_THROTTLE_CLASSES': (
-        'sendemail.throttle.ClientRateThrottle',
+        'core.middleware.throttle.ClientRateThrottle',
     ),
     'DEFAULT_THROTTLE_RATES': {
         'client': '60/minute'
@@ -153,17 +148,6 @@ CORS_ORIGIN_WHITELIST = [
     'http://127.0.0.1:8000',
 ]
 
-OAUTH2_PROVIDER = {
-    # this is the list of available scopes
-    'SCOPES': {'read': 'Read scope',
-               'write': 'Write scope',
-               'groups': 'Access to your groups'},
-    'CLIENT_ID_GENERATOR_CLASS':
-        'oauth2_provider.generators.ClientIdGenerator',
-    'ACCESS_TOKEN_EXPIRE_SECONDS': 3600,
-}
-
-
 # configuration for Redis queue
 RQ_QUEUES = {
     'default': {
@@ -175,42 +159,6 @@ RQ_QUEUES = {
 }
 
 
-LOGGING = {
-    'version': 1,
-    'loggers': {
-        'django': {
-            'handlers': ['debug-file', 'info-file', 'error-file'],
-            'level': 'DEBUG',
-        }
-    },
-    'handlers': {
-        'debug-file': {
-            'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'filename': 'logs/debug.log',
-            'formatter': 'simpleRe',
-        },
-        'info-file': {
-            'level': 'INFO',
-            'class': 'logging.FileHandler',
-            'filename': 'logs/info.log',
-            'formatter': 'simpleRe',
-        },
-        'error-file': {
-            'level': 'ERROR',
-            'class': 'logging.FileHandler',
-            'filename': 'logs/error.log',
-            'formatter': 'simpleRe'
-        },
-    },
-    'formatters': {
-        'simpleRe': {
-            'format': '{levelname} {asctime} {message} {module} {process:d}' +
-                      '{thread:d}',
-            'style': '{',
-        }
-    },
-}
 
 SWAGGER_SETTINGS = {
     'SECURITY_DEFINITIONS': {

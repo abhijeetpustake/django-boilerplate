@@ -18,5 +18,7 @@ drf-yasg = "*"
 watchtower = "*"
 boto3 = "*"
 coverage = "*"
+gunicorn = "*"
+
 [requires]
 python_version = "3.7"
