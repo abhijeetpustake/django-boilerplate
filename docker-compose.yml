@@ -3,8 +3,8 @@ version: '3.7'
 services:
   web:
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
-    # command: gunicorn your_project.wsgi -b 0.0.0.0:8000
+    # command: python manage.py runserver 0.0.0.0:8000
+    command: gunicorn your_project.wsgi:application --env DJANGO_SETTINGS_MODULE='your_project.settings.local' -b 0.0.0.0:8000
     volumes:
       - .:/code
     ports:

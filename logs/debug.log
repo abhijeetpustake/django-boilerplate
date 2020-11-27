@@ -6238,3 +6238,83 @@ DEBUG 2020-11-27 17:49:23,573 File /usr/local/lib/python3.8/site-packages/django
 DEBUG 2020-11-27 17:49:23,578 File /usr/local/lib/python3.8/site-packages/django/contrib/messages/storage/fallback.py first seen with mtime 1606499071.0 autoreload 13 139948360841024
 DEBUG 2020-11-27 17:49:23,580 File /usr/local/lib/python3.8/site-packages/django/contrib/messages/storage/session.py first seen with mtime 1606499071.0 autoreload 13 139948360841024
 DEBUG 2020-11-27 17:49:23,581 File /usr/local/lib/python3.8/site-packages/django/contrib/messages/storage/base.py first seen with mtime 1606499071.0 autoreload 13 139948360841024
+DEBUG 2020-11-27 17:56:36,195 Exception while resolving variable 'name' in template 'unknown'. base 5098 4645387776
+Traceback (most recent call last):
+  File "/Users/abhijeetpustake/.local/share/virtualenvs/django-boilerplate-u_N85-Jq/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/abhijeetpustake/.local/share/virtualenvs/django-boilerplate-u_N85-Jq/lib/python3.7/site-packages/django/core/handlers/base.py", line 165, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/Users/abhijeetpustake/.local/share/virtualenvs/django-boilerplate-u_N85-Jq/lib/python3.7/site-packages/django/core/handlers/base.py", line 288, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/abhijeetpustake/.local/share/virtualenvs/django-boilerplate-u_N85-Jq/lib/python3.7/site-packages/django/urls/resolvers.py", line 576, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'static/admin/css/fonts.css'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/abhijeetpustake/.local/share/virtualenvs/django-boilerplate-u_N85-Jq/lib/python3.7/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/abhijeetpustake/.local/share/virtualenvs/django-boilerplate-u_N85-Jq/lib/python3.7/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/abhijeetpustake/.local/share/virtualenvs/django-boilerplate-u_N85-Jq/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/abhijeetpustake/.local/share/virtualenvs/django-boilerplate-u_N85-Jq/lib/python3.7/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+WARNING 2020-11-27 17:56:36,387 Not Found: /static/admin/css/fonts.css log 5098 4645387776
+DEBUG 2020-11-27 17:57:45,983 Exception while resolving variable 'name' in template 'unknown'. base 8 139915718776640
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 165, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 288, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 576, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'static/admin/css/fonts.css'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 848, in _resolve_lookup
+    raise VariableDoesNotExist("Failed lookup for key "
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+WARNING 2020-11-27 17:57:46,059 Not Found: /static/admin/css/fonts.css log 8 139915718776640
