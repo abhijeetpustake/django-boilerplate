@@ -1,15 +1,19 @@
 from .base import *
 from decouple import config
+from environs import Env
+
+env = Env()
+env.read_env()
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = config('SECRET_KEY')
-SECRET_KEY = '_$!c@&mr1l=d(*av^iujxjas4up*2cs1_vc=2+$rw%%ckbpm^n'
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 LOGGING = {

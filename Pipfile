@@ -19,6 +19,7 @@ watchtower = "*"
 boto3 = "*"
 coverage = "*"
 gunicorn = "*"
+environs = "*"
 
 [requires]
 python_version = "3.7"

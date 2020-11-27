@@ -14,4 +14,6 @@ RUN pip install pipenv && pipenv install --system
 
 # Copy project
 COPY . /code/
-COPY . /.env/
+
+# copy .env
+COPY .env /.env

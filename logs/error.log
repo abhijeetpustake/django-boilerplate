@@ -1,0 +1,2 @@
+ERROR 2020-11-27 17:48:56,675 Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS. exception 8 139669629486848
+ERROR 2020-11-27 17:48:58,825 Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS. exception 8 139669629486848
