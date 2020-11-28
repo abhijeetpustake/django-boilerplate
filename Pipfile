@@ -20,6 +20,7 @@ boto3 = "*"
 coverage = "*"
 gunicorn = "*"
 environs = "*"
+whitenoise = "*"
 
 [requires]
 python_version = "3.7"
