@@ -1,6 +1,6 @@
 # Django Rest Boilerplate
 
-A boilerplate for creating projects using DRF-Docker-Gunicorn with an option to have databas on Sqlite and Postgres hosted locally.
+A boilerplate for creating projects using DRF-Docker-Gunicorn with an option to have database on Sqlite and Postgres hosted locally.
 
 ## Features
 Boilerplate contains the following:
