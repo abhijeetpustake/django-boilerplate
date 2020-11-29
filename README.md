@@ -8,8 +8,8 @@ Boilerplate contains the following:
 2. Configurations for filter backends
 3. Multiple settings file based on the environment
 4. Logs configuration nbased on environments
-  - For dev, uat and prod logs configured for AWS
-  - For local logs configured for local storage
+   * For dev, uat and prod logs configured for AWS
+   * For local logs configured for local storage
 5. Database storage configurations for Sqlite and Postgres which can be toggled using env variable
 6. Configurations for Gunicorn in docker compose file
 
@@ -29,19 +29,19 @@ Follow the steps to run this:
 5. Rename log groups in Settings files based on the environment. Currently this supports AWS and local
 6. Rename your_project to name of your project
 7. Once project is renamed replace the name of the old project with new one at the following places:
-    - wsgi.py
-    - manage.py
-    - docker-compose.yml
+    * wsgi.py
+    * manage.py
+    * docker-compose.yml
 8. To run the project first buuild the container and execute the following:
-    - Build the container
+    * Build the container
       ```bash
       docker-compose build
       ```
-    - Check if django is up and running by executing the following command
+    * Check if django is up and running by executing the following command
       ```bash  
       docker-compose up
       ```
-    - To do the migrations run the following command
+    * To do the migrations run the following command
       ```bash
       docker-compose exec web python manage.py migrate
       ```
