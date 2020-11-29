@@ -22,7 +22,9 @@ Follow the steps to run this:
     pipenv shell
     ``` 
 3. Install all the dependencies
+    ```bash
     pipenv install
+    ```
 4. Add all the variables in .env file
 5. Rename log groups in Settings files based on the environment. Currently this supports AWS and local
 6. Rename your_project to name of your project
@@ -31,8 +33,15 @@ Follow the steps to run this:
     - manage.py
     - docker-compose.yml
 8. To run the project first buuild the container and execute the following:
-    - docker-compose build
+    - Build the container
+      ```bash
+      docker-compose build
+      ```
     - Check if django is up and running by executing the following command
+      ```bash  
       docker-compose up
+      ```
     - To do the migrations run the following command
+      ```bash
       docker-compose exec web python manage.py migrate
+      ```
