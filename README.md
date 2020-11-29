@@ -1,5 +1,8 @@
-Django Rest Boilerplate
+# Django Rest Boilerplate
+
 A boilerplate for creating projects using DRF-Docker-Gunicorn with an option to have databas on Sqlite and Postgres hosted locally.
+
+## Features
 Boilerplate contains the following:
 1. Custom throttliong class
 2. Configurations for filter backends
@@ -10,11 +13,14 @@ Boilerplate contains the following:
 5. Database storage configurations for Sqlite and Postgres which can be toggled using env variable
 6. Configurations for Gunicorn in docker compose file
 
+## Installation
 
 Follow the steps to run this:
 1. First clone the repo
 2. Run the following command to activate the shell
-    pipenv shell 
+    ```bash
+    pipenv shell
+    ``` 
 3. Install all the dependencies
     pipenv install
 4. Add all the variables in .env file
