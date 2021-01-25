@@ -1,0 +1,607 @@
+DEBUG 2021-01-25 15:58:44,041 (0.082) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-01-25T15:58:42.775094+00:00'::timestamptz AND "django_session"."session_key" = 'nfmphwvcnm3xhwod595xlcds2g2l226t') LIMIT 21; args=(datetime.datetime(2021, 1, 25, 15, 58, 42, 775094, tzinfo=<UTC>), 'nfmphwvcnm3xhwod595xlcds2g2l226t') utils 8 140335791093568
+ERROR 2021-01-25 15:58:44,104 Internal Server Error: /admin/posts/post/ log 8 140335791093568
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 165, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 288, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 545, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'your_project'
+DEBUG 2021-01-25 15:58:44,242 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-01-25T15:58:44.234675+00:00'::timestamptz AND "django_session"."session_key" = 'nfmphwvcnm3xhwod595xlcds2g2l226t') LIMIT 21; args=(datetime.datetime(2021, 1, 25, 15, 58, 44, 234675, tzinfo=<UTC>), 'nfmphwvcnm3xhwod595xlcds2g2l226t') utils 8 140335791093568
+ERROR 2021-01-25 15:58:44,262 Internal Server Error: / log 8 140335791093568
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 165, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 288, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 545, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'your_project'
+DEBUG 2021-01-25 15:59:15,766 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-01-25T15:59:15.630304+00:00'::timestamptz AND "django_session"."session_key" = 'nfmphwvcnm3xhwod595xlcds2g2l226t') LIMIT 21; args=(datetime.datetime(2021, 1, 25, 15, 59, 15, 630304, tzinfo=<UTC>), 'nfmphwvcnm3xhwod595xlcds2g2l226t') utils 17 140335791093568
+ERROR 2021-01-25 15:59:15,797 Internal Server Error: /favicon.ico/ log 17 140335791093568
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 165, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 288, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 545, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'your_project'
+DEBUG 2021-01-25 15:59:15,838 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-01-25T15:59:15.826678+00:00'::timestamptz AND "django_session"."session_key" = 'nfmphwvcnm3xhwod595xlcds2g2l226t') LIMIT 21; args=(datetime.datetime(2021, 1, 25, 15, 59, 15, 826678, tzinfo=<UTC>), 'nfmphwvcnm3xhwod595xlcds2g2l226t') utils 17 140335791093568
+ERROR 2021-01-25 15:59:15,860 Internal Server Error: /favicon.ico/ log 17 140335791093568
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 165, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 288, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 545, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'your_project'
+DEBUG 2021-01-25 16:01:16,105 (0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-01-25T16:01:16.003099+00:00'::timestamptz AND "django_session"."session_key" = 'nfmphwvcnm3xhwod595xlcds2g2l226t') LIMIT 21; args=(datetime.datetime(2021, 1, 25, 16, 1, 16, 3099, tzinfo=<UTC>), 'nfmphwvcnm3xhwod595xlcds2g2l226t') utils 17 140335791093568
+ERROR 2021-01-25 16:01:16,128 Internal Server Error: / log 17 140335791093568
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 165, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 288, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 545, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'your_project'
+DEBUG 2021-01-25 16:01:16,164 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-01-25T16:01:16.152344+00:00'::timestamptz AND "django_session"."session_key" = 'nfmphwvcnm3xhwod595xlcds2g2l226t') LIMIT 21; args=(datetime.datetime(2021, 1, 25, 16, 1, 16, 152344, tzinfo=<UTC>), 'nfmphwvcnm3xhwod595xlcds2g2l226t') utils 17 140335791093568
+ERROR 2021-01-25 16:01:16,191 Internal Server Error: /favicon.ico/ log 17 140335791093568
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 165, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 288, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 545, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'your_project'
+DEBUG 2021-01-25 16:01:19,433 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-01-25T16:01:19.424590+00:00'::timestamptz AND "django_session"."session_key" = 'nfmphwvcnm3xhwod595xlcds2g2l226t') LIMIT 21; args=(datetime.datetime(2021, 1, 25, 16, 1, 19, 424590, tzinfo=<UTC>), 'nfmphwvcnm3xhwod595xlcds2g2l226t') utils 17 140335791093568
+ERROR 2021-01-25 16:01:19,453 Internal Server Error: / log 17 140335791093568
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 165, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 288, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 545, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'your_project'
+DEBUG 2021-01-25 16:01:19,494 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-01-25T16:01:19.482117+00:00'::timestamptz AND "django_session"."session_key" = 'nfmphwvcnm3xhwod595xlcds2g2l226t') LIMIT 21; args=(datetime.datetime(2021, 1, 25, 16, 1, 19, 482117, tzinfo=<UTC>), 'nfmphwvcnm3xhwod595xlcds2g2l226t') utils 17 140335791093568
+ERROR 2021-01-25 16:01:19,521 Internal Server Error: /favicon.ico/ log 17 140335791093568
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 165, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 288, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 545, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'your_project'
+DEBUG 2021-01-25 16:01:33,186 (0.305) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,191 (0.001) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,195 (0.001) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,197 CREATE TABLE "django_migrations" ("id" serial NOT NULL PRIMARY KEY, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" timestamp with time zone NOT NULL); (params None) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,652 (0.455) CREATE TABLE "django_migrations" ("id" serial NOT NULL PRIMARY KEY, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" timestamp with time zone NOT NULL); args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,659 CREATE TABLE "django_content_type" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params None) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,666 (0.005) CREATE TABLE "django_content_type" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,668 ALTER TABLE "django_content_type" ADD CONSTRAINT "django_content_type_app_label_model_76bd3d3b_uniq" UNIQUE ("app_label", "model"); (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,671 (0.002) ALTER TABLE "django_content_type" ADD CONSTRAINT "django_content_type_app_label_model_76bd3d3b_uniq" UNIQUE ("app_label", "model"); args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,672 (0.001) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,677 (0.003) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('contenttypes', '0001_initial', '2021-01-25T16:01:33.673870+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('contenttypes', '0001_initial', datetime.datetime(2021, 1, 25, 16, 1, 33, 673870, tzinfo=<UTC>)) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,680 CREATE TABLE "auth_permission" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL, "codename" varchar(100) NOT NULL); (params None) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,684 (0.002) CREATE TABLE "auth_permission" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL, "codename" varchar(100) NOT NULL); args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,689 CREATE TABLE "auth_group" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(80) NOT NULL UNIQUE); (params None) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,737 (0.047) CREATE TABLE "auth_group" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(80) NOT NULL UNIQUE); args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,739 CREATE TABLE "auth_group_permissions" ("id" serial NOT NULL PRIMARY KEY, "group_id" integer NOT NULL, "permission_id" integer NOT NULL); (params None) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,743 (0.004) CREATE TABLE "auth_group_permissions" ("id" serial NOT NULL PRIMARY KEY, "group_id" integer NOT NULL, "permission_id" integer NOT NULL); args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,749 CREATE TABLE "auth_user" ("id" serial NOT NULL PRIMARY KEY, "password" varchar(128) NOT NULL, "last_login" timestamp with time zone NOT NULL, "is_superuser" boolean NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(75) NOT NULL, "is_staff" boolean NOT NULL, "is_active" boolean NOT NULL, "date_joined" timestamp with time zone NOT NULL); (params None) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,753 (0.003) CREATE TABLE "auth_user" ("id" serial NOT NULL PRIMARY KEY, "password" varchar(128) NOT NULL, "last_login" timestamp with time zone NOT NULL, "is_superuser" boolean NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(75) NOT NULL, "is_staff" boolean NOT NULL, "is_active" boolean NOT NULL, "date_joined" timestamp with time zone NOT NULL); args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,754 CREATE TABLE "auth_user_groups" ("id" serial NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "group_id" integer NOT NULL); (params None) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,757 (0.002) CREATE TABLE "auth_user_groups" ("id" serial NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "group_id" integer NOT NULL); args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,758 CREATE TABLE "auth_user_user_permissions" ("id" serial NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "permission_id" integer NOT NULL); (params None) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,760 (0.002) CREATE TABLE "auth_user_user_permissions" ("id" serial NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "permission_id" integer NOT NULL); args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,762 (0.001) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,764 (0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0001_initial', '2021-01-25T16:01:33.763306+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0001_initial', datetime.datetime(2021, 1, 25, 16, 1, 33, 763306, tzinfo=<UTC>)) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,765 ALTER TABLE "auth_permission" ADD CONSTRAINT "auth_permission_content_type_id_codename_01ab375a_uniq" UNIQUE ("content_type_id", "codename"); (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,766 (0.001) ALTER TABLE "auth_permission" ADD CONSTRAINT "auth_permission_content_type_id_codename_01ab375a_uniq" UNIQUE ("content_type_id", "codename"); args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,767 ALTER TABLE "auth_permission" ADD CONSTRAINT "auth_permission_content_type_id_2f476e4b_fk_django_co" FOREIGN KEY ("content_type_id") REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED; (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,772 (0.004) ALTER TABLE "auth_permission" ADD CONSTRAINT "auth_permission_content_type_id_2f476e4b_fk_django_co" FOREIGN KEY ("content_type_id") REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED; args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,772 CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,774 (0.001) CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,775 CREATE INDEX "auth_group_name_a6ea08ec_like" ON "auth_group" ("name" varchar_pattern_ops); (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,778 (0.002) CREATE INDEX "auth_group_name_a6ea08ec_like" ON "auth_group" ("name" varchar_pattern_ops); args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,778 ALTER TABLE "auth_group_permissions" ADD CONSTRAINT "auth_group_permissions_group_id_permission_id_0cd325b0_uniq" UNIQUE ("group_id", "permission_id"); (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,780 (0.001) ALTER TABLE "auth_group_permissions" ADD CONSTRAINT "auth_group_permissions_group_id_permission_id_0cd325b0_uniq" UNIQUE ("group_id", "permission_id"); args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,781 ALTER TABLE "auth_group_permissions" ADD CONSTRAINT "auth_group_permissions_group_id_b120cbf9_fk_auth_group_id" FOREIGN KEY ("group_id") REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED; (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,782 (0.001) ALTER TABLE "auth_group_permissions" ADD CONSTRAINT "auth_group_permissions_group_id_b120cbf9_fk_auth_group_id" FOREIGN KEY ("group_id") REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED; args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,783 ALTER TABLE "auth_group_permissions" ADD CONSTRAINT "auth_group_permissio_permission_id_84c5c92e_fk_auth_perm" FOREIGN KEY ("permission_id") REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED; (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,785 (0.001) ALTER TABLE "auth_group_permissions" ADD CONSTRAINT "auth_group_permissio_permission_id_84c5c92e_fk_auth_perm" FOREIGN KEY ("permission_id") REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED; args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,785 CREATE INDEX "auth_group_permissions_group_id_b120cbf9" ON "auth_group_permissions" ("group_id"); (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,787 (0.001) CREATE INDEX "auth_group_permissions_group_id_b120cbf9" ON "auth_group_permissions" ("group_id"); args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,788 CREATE INDEX "auth_group_permissions_permission_id_84c5c92e" ON "auth_group_permissions" ("permission_id"); (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,790 (0.001) CREATE INDEX "auth_group_permissions_permission_id_84c5c92e" ON "auth_group_permissions" ("permission_id"); args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,791 CREATE INDEX "auth_user_username_6821ab7c_like" ON "auth_user" ("username" varchar_pattern_ops); (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,793 (0.001) CREATE INDEX "auth_user_username_6821ab7c_like" ON "auth_user" ("username" varchar_pattern_ops); args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,794 ALTER TABLE "auth_user_groups" ADD CONSTRAINT "auth_user_groups_user_id_group_id_94350c0c_uniq" UNIQUE ("user_id", "group_id"); (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,835 (0.040) ALTER TABLE "auth_user_groups" ADD CONSTRAINT "auth_user_groups_user_id_group_id_94350c0c_uniq" UNIQUE ("user_id", "group_id"); args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,837 ALTER TABLE "auth_user_groups" ADD CONSTRAINT "auth_user_groups_user_id_6a12ed8b_fk_auth_user_id" FOREIGN KEY ("user_id") REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED; (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,839 (0.002) ALTER TABLE "auth_user_groups" ADD CONSTRAINT "auth_user_groups_user_id_6a12ed8b_fk_auth_user_id" FOREIGN KEY ("user_id") REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED; args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,840 ALTER TABLE "auth_user_groups" ADD CONSTRAINT "auth_user_groups_group_id_97559544_fk_auth_group_id" FOREIGN KEY ("group_id") REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED; (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,842 (0.001) ALTER TABLE "auth_user_groups" ADD CONSTRAINT "auth_user_groups_group_id_97559544_fk_auth_group_id" FOREIGN KEY ("group_id") REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED; args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,843 CREATE INDEX "auth_user_groups_user_id_6a12ed8b" ON "auth_user_groups" ("user_id"); (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,845 (0.002) CREATE INDEX "auth_user_groups_user_id_6a12ed8b" ON "auth_user_groups" ("user_id"); args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,846 CREATE INDEX "auth_user_groups_group_id_97559544" ON "auth_user_groups" ("group_id"); (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,848 (0.001) CREATE INDEX "auth_user_groups_group_id_97559544" ON "auth_user_groups" ("group_id"); args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,848 ALTER TABLE "auth_user_user_permissions" ADD CONSTRAINT "auth_user_user_permissions_user_id_permission_id_14a6b632_uniq" UNIQUE ("user_id", "permission_id"); (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,850 (0.001) ALTER TABLE "auth_user_user_permissions" ADD CONSTRAINT "auth_user_user_permissions_user_id_permission_id_14a6b632_uniq" UNIQUE ("user_id", "permission_id"); args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,851 ALTER TABLE "auth_user_user_permissions" ADD CONSTRAINT "auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id" FOREIGN KEY ("user_id") REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED; (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,852 (0.001) ALTER TABLE "auth_user_user_permissions" ADD CONSTRAINT "auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id" FOREIGN KEY ("user_id") REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED; args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,853 ALTER TABLE "auth_user_user_permissions" ADD CONSTRAINT "auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm" FOREIGN KEY ("permission_id") REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED; (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,855 (0.001) ALTER TABLE "auth_user_user_permissions" ADD CONSTRAINT "auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm" FOREIGN KEY ("permission_id") REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED; args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,856 CREATE INDEX "auth_user_user_permissions_user_id_a95ead1b" ON "auth_user_user_permissions" ("user_id"); (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,857 (0.001) CREATE INDEX "auth_user_user_permissions_user_id_a95ead1b" ON "auth_user_user_permissions" ("user_id"); args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,858 CREATE INDEX "auth_user_user_permissions_permission_id_1fbb5f2c" ON "auth_user_user_permissions" ("permission_id"); (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,860 (0.001) CREATE INDEX "auth_user_user_permissions_permission_id_1fbb5f2c" ON "auth_user_user_permissions" ("permission_id"); args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,868 CREATE TABLE "django_admin_log" ("id" serial NOT NULL PRIMARY KEY, "action_time" timestamp with time zone NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint NOT NULL CHECK ("action_flag" >= 0), "change_message" text NOT NULL, "content_type_id" integer NULL, "user_id" integer NOT NULL); (params None) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,957 (0.086) CREATE TABLE "django_admin_log" ("id" serial NOT NULL PRIMARY KEY, "action_time" timestamp with time zone NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint NOT NULL CHECK ("action_flag" >= 0), "change_message" text NOT NULL, "content_type_id" integer NULL, "user_id" integer NOT NULL); args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,960 (0.001) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,963 (0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('admin', '0001_initial', '2021-01-25T16:01:33.961949+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('admin', '0001_initial', datetime.datetime(2021, 1, 25, 16, 1, 33, 961949, tzinfo=<UTC>)) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,964 ALTER TABLE "django_admin_log" ADD CONSTRAINT "django_admin_log_content_type_id_c4bce8eb_fk_django_co" FOREIGN KEY ("content_type_id") REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED; (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,966 (0.002) ALTER TABLE "django_admin_log" ADD CONSTRAINT "django_admin_log_content_type_id_c4bce8eb_fk_django_co" FOREIGN KEY ("content_type_id") REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED; args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,967 ALTER TABLE "django_admin_log" ADD CONSTRAINT "django_admin_log_user_id_c564eba6_fk_auth_user_id" FOREIGN KEY ("user_id") REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED; (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:33,970 (0.002) ALTER TABLE "django_admin_log" ADD CONSTRAINT "django_admin_log_user_id_c564eba6_fk_auth_user_id" FOREIGN KEY ("user_id") REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED; args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:33,971 CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:34,016 (0.042) CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,017 CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:34,019 (0.002) CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,029 (0.002) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,033 (0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('admin', '0002_logentry_remove_auto_add', '2021-01-25T16:01:34.031632+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('admin', '0002_logentry_remove_auto_add', datetime.datetime(2021, 1, 25, 16, 1, 34, 31632, tzinfo=<UTC>)) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,045 (0.002) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,047 (0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('admin', '0003_logentry_add_action_flag_choices', '2021-01-25T16:01:34.046469+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('admin', '0003_logentry_add_action_flag_choices', datetime.datetime(2021, 1, 25, 16, 1, 34, 46469, tzinfo=<UTC>)) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,056 ALTER TABLE "django_content_type" ALTER COLUMN "name" DROP NOT NULL; (params []) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:34,059 (0.001) ALTER TABLE "django_content_type" ALTER COLUMN "name" DROP NOT NULL; args=[] utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,069 ALTER TABLE "django_content_type" DROP COLUMN "name" CASCADE; (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:34,075 (0.005) ALTER TABLE "django_content_type" DROP COLUMN "name" CASCADE; args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,078 (0.002) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,081 (0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('contenttypes', '0002_remove_content_type_name', '2021-01-25T16:01:34.080208+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('contenttypes', '0002_remove_content_type_name', datetime.datetime(2021, 1, 25, 16, 1, 34, 80208, tzinfo=<UTC>)) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,092 ALTER TABLE "auth_permission" ALTER COLUMN "name" TYPE varchar(255); (params []) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:34,094 (0.001) ALTER TABLE "auth_permission" ALTER COLUMN "name" TYPE varchar(255); args=[] utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,096 (0.001) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,098 (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0002_alter_permission_name_max_length', '2021-01-25T16:01:34.097783+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0002_alter_permission_name_max_length', datetime.datetime(2021, 1, 25, 16, 1, 34, 97783, tzinfo=<UTC>)) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,179 ALTER TABLE "auth_user" ALTER COLUMN "email" TYPE varchar(254); (params []) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:34,183 (0.001) ALTER TABLE "auth_user" ALTER COLUMN "email" TYPE varchar(254); args=[] utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,185 (0.001) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,187 (0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0003_alter_user_email_max_length', '2021-01-25T16:01:34.186278+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0003_alter_user_email_max_length', datetime.datetime(2021, 1, 25, 16, 1, 34, 186278, tzinfo=<UTC>)) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,235 (0.001) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,238 (0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0004_alter_user_username_opts', '2021-01-25T16:01:34.237283+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0004_alter_user_username_opts', datetime.datetime(2021, 1, 25, 16, 1, 34, 237283, tzinfo=<UTC>)) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,249 ALTER TABLE "auth_user" ALTER COLUMN "last_login" DROP NOT NULL; (params []) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:34,251 (0.001) ALTER TABLE "auth_user" ALTER COLUMN "last_login" DROP NOT NULL; args=[] utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,253 (0.001) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,254 (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0005_alter_user_last_login_null', '2021-01-25T16:01:34.254091+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0005_alter_user_last_login_null', datetime.datetime(2021, 1, 25, 16, 1, 34, 254091, tzinfo=<UTC>)) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,258 (0.001) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,259 (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0006_require_contenttypes_0002', '2021-01-25T16:01:34.259212+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0006_require_contenttypes_0002', datetime.datetime(2021, 1, 25, 16, 1, 34, 259212, tzinfo=<UTC>)) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,270 (0.002) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,273 (0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0007_alter_validators_add_error_messages', '2021-01-25T16:01:34.271968+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0007_alter_validators_add_error_messages', datetime.datetime(2021, 1, 25, 16, 1, 34, 271968, tzinfo=<UTC>)) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,285 ALTER TABLE "auth_user" ALTER COLUMN "username" TYPE varchar(150); (params []) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:34,294 (0.008) ALTER TABLE "auth_user" ALTER COLUMN "username" TYPE varchar(150); args=[] utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,296 (0.001) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,298 (0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0008_alter_user_username_max_length', '2021-01-25T16:01:34.297487+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0008_alter_user_username_max_length', datetime.datetime(2021, 1, 25, 16, 1, 34, 297487, tzinfo=<UTC>)) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,311 ALTER TABLE "auth_user" ALTER COLUMN "last_name" TYPE varchar(150); (params []) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:34,313 (0.001) ALTER TABLE "auth_user" ALTER COLUMN "last_name" TYPE varchar(150); args=[] utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,316 (0.001) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,318 (0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0009_alter_user_last_name_max_length', '2021-01-25T16:01:34.317559+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0009_alter_user_last_name_max_length', datetime.datetime(2021, 1, 25, 16, 1, 34, 317559, tzinfo=<UTC>)) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,367 ALTER TABLE "auth_group" ALTER COLUMN "name" TYPE varchar(150); (params []) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:34,372 (0.003) ALTER TABLE "auth_group" ALTER COLUMN "name" TYPE varchar(150); args=[] utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,374 (0.001) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,379 (0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0010_alter_group_name_max_length', '2021-01-25T16:01:34.378702+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0010_alter_group_name_max_length', datetime.datetime(2021, 1, 25, 16, 1, 34, 378702, tzinfo=<UTC>)) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,429 (0.002) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,432 (0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0011_update_proxy_permissions', '2021-01-25T16:01:34.431242+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0011_update_proxy_permissions', datetime.datetime(2021, 1, 25, 16, 1, 34, 431242, tzinfo=<UTC>)) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,440 ALTER TABLE "auth_user" ALTER COLUMN "first_name" TYPE varchar(150); (params []) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:34,443 (0.001) ALTER TABLE "auth_user" ALTER COLUMN "first_name" TYPE varchar(150); args=[] utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,445 (0.001) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,447 (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0012_alter_user_first_name_max_length', '2021-01-25T16:01:34.446264+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0012_alter_user_first_name_max_length', datetime.datetime(2021, 1, 25, 16, 1, 34, 446264, tzinfo=<UTC>)) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,450 CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" timestamp with time zone NOT NULL); (params None) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:34,455 (0.004) CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" timestamp with time zone NOT NULL); args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,458 (0.001) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,459 (0.001) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('sessions', '0001_initial', '2021-01-25T16:01:34.458964+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('sessions', '0001_initial', datetime.datetime(2021, 1, 25, 16, 1, 34, 458964, tzinfo=<UTC>)) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,460 CREATE INDEX "django_session_session_key_c0390e0f_like" ON "django_session" ("session_key" varchar_pattern_ops); (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:34,462 (0.001) CREATE INDEX "django_session_session_key_c0390e0f_like" ON "django_session" ("session_key" varchar_pattern_ops); args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,463 CREATE INDEX "django_session_expire_date_a5c62663" ON "django_session" ("expire_date"); (params ()) schema 18 140113921120064
+DEBUG 2021-01-25 16:01:34,467 (0.003) CREATE INDEX "django_session_expire_date_a5c62663" ON "django_session" ("expire_date"); args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,470 (0.001) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,472 (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=() utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,483 (0.003) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,485 (0.001) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('admin', 'logentry') RETURNING "django_content_type"."id"; args=('admin', 'logentry') utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,488 (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry') LIMIT 21; args=('admin', 'logentry') utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,516 (0.023) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,520 (0.001) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES ('Can add log entry', 1, 'add_logentry'), ('Can change log entry', 1, 'change_logentry'), ('Can delete log entry', 1, 'delete_logentry'), ('Can view log entry', 1, 'view_logentry') RETURNING "auth_permission"."id"; args=('Can add log entry', 1, 'add_logentry', 'Can change log entry', 1, 'change_logentry', 'Can delete log entry', 1, 'delete_logentry', 'Can view log entry', 1, 'view_logentry') utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,544 (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,547 (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,550 (0.001) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('auth', 'permission'), ('auth', 'group'), ('auth', 'user') RETURNING "django_content_type"."id"; args=('auth', 'permission', 'auth', 'group', 'auth', 'user') utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,576 (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission') LIMIT 21; args=('auth', 'permission') utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,579 (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group') LIMIT 21; args=('auth', 'group') utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,582 (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user') LIMIT 21; args=('auth', 'user') utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,585 (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,587 (0.001) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES ('Can add permission', 2, 'add_permission'), ('Can change permission', 2, 'change_permission'), ('Can delete permission', 2, 'delete_permission'), ('Can view permission', 2, 'view_permission'), ('Can add group', 3, 'add_group'), ('Can change group', 3, 'change_group'), ('Can delete group', 3, 'delete_group'), ('Can view group', 3, 'view_group'), ('Can add user', 4, 'add_user'), ('Can change user', 4, 'change_user'), ('Can delete user', 4, 'delete_user'), ('Can view user', 4, 'view_user') RETURNING "auth_permission"."id"; args=('Can add permission', 2, 'add_permission', 'Can change permission', 2, 'change_permission', 'Can delete permission', 2, 'delete_permission', 'Can view permission', 2, 'view_permission', 'Can add group', 3, 'add_group', 'Can change group', 3, 'change_group', 'Can delete group', 3, 'delete_group', 'Can view group', 3, 'view_group', 'Can add user', 4, 'add_user', 'Can change user', 4, 'change_user', 'Can delete user', 4, 'delete_user', 'Can view user', 4, 'view_user') utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,590 (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,592 (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,593 (0.001) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('contenttypes', 'contenttype') RETURNING "django_content_type"."id"; args=('contenttypes', 'contenttype') utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,596 (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype') LIMIT 21; args=('contenttypes', 'contenttype') utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,598 (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,600 (0.001) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES ('Can add content type', 5, 'add_contenttype'), ('Can change content type', 5, 'change_contenttype'), ('Can delete content type', 5, 'delete_contenttype'), ('Can view content type', 5, 'view_contenttype') RETURNING "auth_permission"."id"; args=('Can add content type', 5, 'add_contenttype', 'Can change content type', 5, 'change_contenttype', 'Can delete content type', 5, 'delete_contenttype', 'Can view content type', 5, 'view_contenttype') utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,602 (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,605 (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,607 (0.001) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('sessions', 'session') RETURNING "django_content_type"."id"; args=('sessions', 'session') utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,611 (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session') LIMIT 21; args=('sessions', 'session') utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,614 (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,) utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,617 (0.001) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES ('Can add session', 6, 'add_session'), ('Can change session', 6, 'change_session'), ('Can delete session', 6, 'delete_session'), ('Can view session', 6, 'view_session') RETURNING "auth_permission"."id"; args=('Can add session', 6, 'add_session', 'Can change session', 6, 'change_session', 'Can delete session', 6, 'delete_session', 'Can view session', 6, 'view_session') utils 18 140113921120064
+DEBUG 2021-01-25 16:01:34,619 (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',) utils 18 140113921120064
+DEBUG 2021-01-25 16:02:12,233 Exception while resolving variable 'name' in template 'unknown'. base 8 140127991060288
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 165, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 288, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 576, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'favicon.ico/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 848, in _resolve_lookup
+    raise VariableDoesNotExist("Failed lookup for key "
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+WARNING 2021-01-25 16:02:12,235 Not Found: /favicon.ico/ log 8 140127991060288

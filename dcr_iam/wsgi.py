@@ -1,5 +1,5 @@
 """
-WSGI config for your_project project.
+WSGI config for dcr_iam project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -13,6 +13,6 @@ from decouple import config
 
 from django.core.wsgi import get_wsgi_application
 environment = config('ENVIRONMENT')
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', f'your_project.settings.{environment}')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', f'dcr_iam.settings.{environment}')
 
 application = get_wsgi_application()
