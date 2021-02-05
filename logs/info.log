@@ -223,3 +223,7 @@ Traceback (most recent call last):
   File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
 ModuleNotFoundError: No module named 'your_project'
 WARNING 2021-01-25 16:02:12,235 Not Found: /favicon.ico/ log 8 140127991060288
+INFO 2021-02-05 15:47:42,976 Watching for file changes with StatReloader autoreload 90343 4780940800
+INFO 2021-02-05 15:48:36,359 Watching for file changes with StatReloader autoreload 90824 4762222080
+INFO 2021-02-05 15:49:55,187 Watching for file changes with StatReloader autoreload 91797 4612730368
+INFO 2021-02-05 15:52:01,874 Watching for file changes with StatReloader autoreload 92902 4620914176

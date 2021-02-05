@@ -3,7 +3,7 @@ version: '3.7'
 services:
   web:
     build: .
-    command: gunicorn dcr_iam.wsgi -b 0.0.0.0:8000
+    command: gunicorn dcr_middleware.wsgi -b 0.0.0.0:8000
     volumes:
       - .:/code
     ports:

@@ -21,6 +21,9 @@ coverage = "*"
 gunicorn = "*"
 environs = "*"
 whitenoise = "*"
+django-filter = "*"
+django-extensions = "*"
+django-jsonfield = "*"
 
 [requires]
 python_version = "3.7"
